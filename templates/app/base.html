@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Music Player{% endblock %}</title>
+    <!-- Add your CSS links or stylesheets here -->
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'song_list' %}">Song List</a></li>
+            <!-- Add more navigation links as needed -->
+        </ul>
+    </nav>
+    
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <!-- Add your JavaScript scripts here, if necessary -->
+</body>
+</html>
